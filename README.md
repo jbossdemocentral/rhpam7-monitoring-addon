@@ -1,4 +1,4 @@
-Red Hat Process Automation Manager 7 Demo - OpenShift Monitorin Add-On
+Red Hat Process Automation Manager 7 Demo - OpenShift Monitoring Add-On
 =======================================
 Project to add [Prometheus](https://prometheus.io) and [Grafana](https://grafana.com) monitoring to an existing Red Hat Process Automation Manager 7 demo installation on OpenShift
 
