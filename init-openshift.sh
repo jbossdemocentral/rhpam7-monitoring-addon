@@ -72,6 +72,8 @@ fi
 
 echo "Namespace is: $NAMESPACE"
 
+# TODO: automatically get all installed KIE-Servers from oc ....: oc get dc | grep -i kieserver | awk '{print $1}'
+
 KIE_SERVER_SERVICE=$DEMO-kieserver
 KIE_SERVER_DC=$DEMO-kieserver
 
@@ -213,7 +215,7 @@ echo "Create Prometheus Datasource."
 PAYLOAD="$( mktemp )"
 cat <<EOF >"${PAYLOAD}"
 {
-"name": "prometheus-ddoyle",
+"name": "prometheus",
 "type": "prometheus",
 "typeLogoUrl": "",
 "access": "proxy",
